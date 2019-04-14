@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Dawn</title>
+		<link rel="stylesheet" href="home.css">
+		<link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	
+		<script src="memPuzzle.js"></script>
+		
+		<script src="src/grid.js"></script><script src="src/solver.js"></script>
+		<script src="src/puzzle.js"></script>
+		
+	</head>
+
+	<body>
+		<header>
+			<h1>Temporal Lobe</h1>
+		</header>
+<!-- navbar -->
+		<div class = "row">
+			<h2> Select Destination</h2>
+		</div>
+		<div class = "row">
+			
+				<ul class = "navbar">
+				<li class="paths"> <a href="FrontLobe.html">Frontal Lobe</a>	
+				<li class="paths"> <a href="Cerebellum.html">Cerebellum</a>		</li>
+				<li class="paths"> <a href="TempLobe.html">Temporal Lobe</a>	</li>
+				<li class="paths"> <a href="BrainStem.html">Brain Stem</a> 		</li>
+				<li class="paths"> <a href="#">Occipital Lobe</a>	</li>
+				<li class="paths"> <a href="#">Parietal Lobe</a>	</li>
+				</ul>
+			
+		</div>
+	<div class="row">
+		<div class="column2">
+			<div id="puzzle"></div>
+			<script>var puzzle = new Puzzle($('#puzzle'))</script>
+			<br>
+			<br>
+			<input type="button" id="newGame" value="Reset">
+		</div>
+		<div class="column2">
+		<!-- cmd updates -->
+
+			<textarea readonly class = "cmd" id="tempcmd">Reorder the numbers to recover memories</textarea>
+		</div>
+	</div>
+<br>
+
+
+		<div class="row">
+			<div id="progress"></div>
+		</div>
+		
+		<br>
+
+		<footer>
+		<br/>
+				<p>Puzzle code creds to: Robinson Programming Solutions LLC</p>
+		<a href="https://validator.w3.org/check?uri=referer">Validate HTML</a> 
+		<br/>
+		<a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+	</footer>
+	
+
+	</body>
+</html>

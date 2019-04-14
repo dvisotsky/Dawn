@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Minesweeper</title> 
+	<link rel="stylesheet" href="minesweeper.css" />
+	<script src="libs/require.js" data-main="main"></script>
+</head>
+<body>
+
+    <div id="game">
+        <div id="controls">
+            <div>
+                <h2>
+                    <span>Your time:</span>
+                    <span data-bind="text: timeElapsed.toFixed(1)"></span>
+                </h2>
+            </div>
+            <div>
+                <span>Level:</span>
+                <!-- <select data-bind="options: difficultyLevels, optionsText: 'name', value: level"> -->
+                </select>
+                <button class="newGame" type="button" data-bind="click: start">Reset</button>
+            </div>
+        </div>
+        <div id="board"></div>
+    </div>
+
+    <script type="text/html" id="boardTemplate">
+        <div data-bind="foreach: fields">
+            <div class="field" data-bind="event: {mousedown: $root.onRevealField}, css: {'mine': isMine, 'hidden': !isRevealed, 'flag': isFlagged}">
+                <span data-bind="text: mineCount || ''"></span>
+            </div>
+        </div>
+        <div style="clear: left"></div>
+    </script>
+</body>
+</html>

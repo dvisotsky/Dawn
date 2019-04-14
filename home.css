@@ -1,0 +1,191 @@
+
+
+body {
+	font-size: 16px;
+    background-image: url("backimg.jpg");
+}
+
+/*styling for the page title*/
+h1 {
+	font-size: 28px;
+    text-align: center;
+    text-shadow: 2px 1px 1px #07e;
+	color: #ccc;
+	font-family: "Trebuchet MS";
+}
+
+h2{
+	
+	color: #aaaaaa;
+	border-bottom: solid;
+	border-color: #07e;
+	font-family: "Trebuchet MS";
+}
+h3{
+	margin: 0px;
+}
+h4{
+	background-color: #660059;
+}
+
+a{
+	text-decoration: none;
+	color: #aaaaaa;
+	padding: 3px;
+}
+p{
+	margin:0px;
+	text-align: center;
+	color: white;
+}
+canvas{
+	border: 2px solid #0aa;
+    background-color: #bbb;
+	margin: 20px;
+}
+
+.stuff{
+	 margin-left:20%;
+	 padding:1px 16px;
+}
+
+.actions{
+	list-style-type: none;
+	padding: 2px;
+	margin: 7px;
+}
+.actions:hover{
+	text-shadow: 1px 1px;
+}
+
+.navbar{
+	list-style-type: none;
+	background-color: rgb(10,200,200, .1);
+	padding: 4px;
+}
+
+
+.paths{
+	padding: 3px;
+	display: block;
+	display:inline;
+	transition: transform .2s; 
+}
+.paths:hover{
+	text-shadow: 1px 1px;
+	transform: scale(1.25);
+}
+
+
+.column{
+	float: left;
+	Width: 33%;
+	text-align: center;
+}
+
+.column2{
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+.row:after{
+	align: center;
+	text-align: center;
+}
+.btn{
+	font-family: serif;
+	font-size: 16px;
+	background-color: #222222;
+	border: none;
+	color: #aaaaaa;
+	cursor: pointer;
+}
+.btn:hover{
+	text-shadow: 1px 1px;
+}
+
+.cmd{
+	resize: none;
+	background-color: #111;
+	color: #38c;
+	padding-bottom: 150px;
+	margin: 12px;
+	width: 85%;
+	border-style: solid;
+	border-width: 3px 1px 1px 1px;
+
+}
+
+
+
+#introcmd{
+	position: relative;
+	border-style: ridge;
+	border-color: rgb(240,220,225);
+	margin:  0 25% 0 25%;
+	padding: 10px 10px 100px 10px;
+	color: grey;
+	background-color: #111111;
+	
+}
+
+
+#one{
+	color: #aaaaaa;
+}
+
+/*TEMPORAL LOBE STUFF---------------------------------------*/
+
+#memsrecovered{
+	color: #77aaee;
+	background-color: #335;
+	border: 2px ridge;
+	border-color: white;
+}
+
+/*fifteen game STUFF ----------------------------------*/
+#table{
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.tile {
+  width: 60px;
+  height: 60px;
+  border: 2px;
+  text-align: center;
+  background-image: radial-gradient(#99d 5%, #335);
+  color: #000;
+  cursor: pointer;
+}
+
+.blank {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+#moves {
+  border: 2px solid #222;
+  /* Webkit (Chrome and Safari) */
+  background: -webkit-gradient(linear, top, bottom,color-stop(15%, white),color-stop(80%, darkgray),);
+  /* Mozilla */
+  background: -moz-linear-gradient(top, white 15%, darkgray 90%);  
+  /* Internet Explorer */
+  background: linear-gradient(90deg, white 15%, darkgray 90%);
+  font-weight: bold;
+  padding: 2px 5px;
+  color: #000;
+  float: center;
+}
+/* end fifteen game */
+
+
+
+
+
+
+
+
