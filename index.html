@@ -3,9 +3,23 @@
 	<head>
 		<title>Dawn</title>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" href="jquery-ui1/jquery-ui.min.css">
 		<link rel="stylesheet" type="text/css" href="home.css">
-		<script src="rando.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link href="css/lightbox.css" rel="stylesheet">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="index.js"></script>
+		<script src="js/lightbox.min.js"></script>
+
+
+		<script>
+		$(document).ready(function() {
+				$("#tabs").tabs();
+
+			});
+		</script>
+
 
 	</head>
 
@@ -13,28 +27,39 @@
 	<body onload="rando(68)">
 			<h1>Welcome, Operative <span id="num1"></span></h1>
 
-			<!--Navigation bar-->
-	
-		<div class = "row">
-			<h2> Select Destination</h2>
-		</div>
-		<div class = "row">
-			
-				<ul class = "navbar">
-				<li class="paths"> <a href="FrontLobe.html">Frontal Lobe</a>	
-				<li class="paths"> <a href="Cerebellum.html">Cerebellum</a>		</li>
-				<li class="paths"> <a href="TempLobe.html">Temporal Lobe</a>	</li>
-				<li class="paths"> <a href="BrainStem.html">Brain Stem</a> 		</li>
-				<li class="paths"> <a href="#">Occipital Lobe</a>	</li>
-				<li class="paths"> <a href="#">Parietal Lobe</a>	</li>
-				</ul>
-			
-		</div>
-		
-			<p id="introcmd">You are tasked with reviving the Patient. The Patient is currently in critical condition and cannot be kept alive much longer.
+
+	<div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Main</a></li>
+                <li><a href="#tabs-2">About</a></li>
+								<li><a href="#tabs-3">Credits</a></li>
+            </ul>
+            <div id="tabs-1">
+                <p class="cmd">You are tasked with reviving the Patient. The Patient is currently in critical condition and cannot be kept alive much longer.
 					You have full access to the Patients mind, it must be reverted back into it's natural state.<br>
 					Good fortune to you.</p>
+            </div>
+            <div id="tabs-2">
+                <p class="cmd"> ITCS 3135 Web Design project by David Visotsky.</p> <br>
+								<div id="brains"></div>
 
-		
+            </div>
+					<div id="tabs-3">
+							<p class="cmd"> This game was inspired by late night wanderings of the mind and made possible
+							by W3Schools, various energy drinks and coffee, and hours of tinkering and googling.<br>
+							It is an attempt at sharing puzzles that I find enjoyable with others and keeping my GPA at a respectable level.<br>
+							The JavaScript puzzles were not made by me, credits for these gems goes to: 101computing.net, Arnis Ritins, and the anonymous genius who made the 2048 game. </p>
+
+							<div id="team"></div>
+					</div>
+
+
+		 </div>
+		 <div id="begin">
+		 	<a class="ui-button ui-widget ui-corner-all" onclick='music()' href="FrontLobe.html">Begin</a>
+		</div>
+
+
+
 	</body>
 </html>
